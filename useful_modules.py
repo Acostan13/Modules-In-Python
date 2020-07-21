@@ -1,4 +1,6 @@
 from collections import Counter, defaultdict, OrderedDict
+import datetime
+from array import array
 
 li = [1, 2, 3, 4, 5, 6, 7, 7]
 sentence = 'blah blah thinking about python'
@@ -27,3 +29,10 @@ d3['a'] = 1
 
 print(d2 == d)  # True
 print(d3 == d2)  # False
+
+print(datetime.time())  # 00:00:00
+print(datetime.time(5, 45, 2))  # 05:45:02
+print(datetime.date.today())  # 2020-07-19 - Today's date
+
+arr = array('i', [1, 2, 3])  # slightly better performing then lists
+print(arr[0])  # 1
